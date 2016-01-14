@@ -26,6 +26,10 @@ angular.module('starter')
 
 .controller('LoginCtrl', function($scope, $state, $ionicPopup, AuthService) {
   $scope.data = {};
+  
+  $scope.CallTel = function(tel) {
+            window.location.href = 'tel:'+ tel;
+        }
  
   $scope.login = function(data) {
     AuthService.login(data.username, data.password).then(function(authenticated) {

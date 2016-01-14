@@ -1,5 +1,25 @@
 <ion-view view-title="Sign-In" name="login-view">
   <ion-content class="padding">
+	<ion-list>
+  		  <ion-item>
+  		  	<h2><strong>Tiago</strong></h2>
+          <h3 class="email">
+            <a href="mailto:tiago.avila09@gmail.com" class="button button-positive button-small">
+              <i class="icon ion-email"></i>
+            </a>
+            tiago.avila09@gmail.com
+          </h3>
+          <h3 class="phone-number">
+            <a ng-click="CallTel(992183713)" class="button button-positive button-small">
+              <i class="icon ion-ios-telephone"></i>
+            </a>
+            992183713
+          </h3>
+          <h4><strong>Cpf/Cnpj:&nbsp;</strong>123</h4>
+          <h4><strong>Endereço:&nbsp;</strong>fdfd</h4>
+  		  </ion-item>
+	  </ion-list>
+		  
       <div class="list list-inset">
           <label class="item item-input">
               <input type="text" placeholder="Username" ng-model="data.username">
