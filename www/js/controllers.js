@@ -28,6 +28,7 @@ angular.module('starter')
   $scope.data = {};
   
   $scope.CallTel = function(tel) {
+	  alert(tel)
             window.location.href = 'tel:'+ tel;
         }
  
